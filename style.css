@@ -112,6 +112,24 @@ footer {
   padding: 0;
   width: 100%;
 }
+
+.return {
+  text-decoration: none;
+  color: unset;
+  display: block;
+}
+
+.input-btn {
+  border: none;
+  padding: 1rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background: #131720;
+  color: white;
+  font-weight: 600;
+  width: 30%;
+}
+
 /* FOOTER END */
 
 /* MEDIA QUERIES */
