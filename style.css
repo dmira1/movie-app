@@ -3,24 +3,32 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  color: white;
 }
 
 .main-container {
   padding: 1rem;
-  max-width: 729px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
 /* HEADER START */
+header {
+  padding: 1rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
 
 .top-nav {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 
 .top-nav a {
   display: block;
+  margin-bottom: 1rem;
 }
 
 .top-nav img {
@@ -37,6 +45,7 @@ form {
 
 input {
   all: unset;
+  text-align: center;
   font-size: 15px;
   color: #fff;
   height: 100%;
@@ -44,13 +53,21 @@ input {
   padding: 0 1rem;
 }
 /* HEADER END */
+
+/* SECTION START */
+h1 {
+  margin-top: 0;
+  text-align: center;
+  text-transform: uppercase;
+}
 .column {
-  width: 32%;
-  padding: 0 10px;
+  width: 100%;
+  margin-bottom: 1rem;
   justify-content: center;
 }
 
 .card {
+  height: 100%;
   border-radius: 10px;
   padding: 1rem;
   text-align: center;
@@ -58,9 +75,14 @@ input {
 }
 
 .thumbnail {
-  height: 300px;
-  width: 200px;
+  width: 100%;
   border-radius: 10px;
+  margin-bottom: 0.5rem;
+}
+
+.date {
+  color: white;
+  font-weight: 600;
 }
 
 h3 {
@@ -68,11 +90,115 @@ h3 {
   color: white;
   margin: 0;
 }
-/* SECTION START */
-
+.rating {
+  margin: 0;
+}
 /* SECTION END */
 
 /* FOOTER START */
+footer {
+  margin: 0 auto;
+  background-color: #151f30;
+}
+
+.footer-container {
+  text-align: center;
+  padding: 1rem;
+  font-weight: 600;
+  margin: 0 auto;
+}
+
+.footer-container p {
+  padding: 0;
+  width: 100%;
+}
 /* FOOTER END */
 
 /* MEDIA QUERIES */
+@media screen and (min-width: 430px) {
+  /* Header START */
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .top-nav a {
+    margin-bottom: 0;
+  }
+  /* Header END */
+
+  /* Section START */  
+  
+  /* Section END */
+
+  /* Footer START */
+  /* Footer END */
+}
+
+@media screen and (min-width: 550px) {
+  /* Header START */
+  /* Header END */
+
+  /* Section START */
+  /* Section END */
+
+  /* Footer START */
+  /* Footer END */
+}
+
+@media screen and (min-width: 720px) {
+  /* Header START */
+
+  /* Header END */
+
+  /* Section START */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+
+  }
+
+  .column {
+    width: 48%;
+    margin: 3% auto;
+  }
+  
+
+  .card {
+    height: 100%;
+  }
+  .thumbnail {
+    height: 82.5%;
+  }
+  /* Section END */
+
+  /* Footer START */
+  /* Footer END */
+}
+
+@media screen and (min-width: 960px) {
+  /* Header START */
+  /* Header END */
+
+  /* Section START */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2%;
+  }
+
+  .column {
+    width: 32%;
+    margin: 3% auto;
+  }
+
+  .thumbnail {
+    height: 77.5%;
+  }
+  /* Section END */
+
+  /* Footer START */
+  /* Footer END */
+}
